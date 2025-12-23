@@ -3,11 +3,20 @@
 # Dockerize java mysql example project
 
 ![preview image](https://raw.githubusercontent.com/mixaverros88/docker-with-java-and-mysql/master/icons/docker_overview.JPG)
-This simple example combines 2 docker files and docker-compose file, one to spin up a mysql container and the other a java container.
 
-These docker files are located in the corresponding folders (mysql, java). Also contains a docker-compose file in the root folder.
+## Overview
 
-Also you can find a network folder, which contains an sh file to create a network in order to allow the communication between the containers throughout containers names.
+This project is a simple example that demonstrates how to use Docker and Docker Compose to run a MySQL container alongside a Java application container.
+
+The project includes two separate Dockerfiles:
+
+- One for the **MySQL** service
+- One for the **Java** application
+
+Each Dockerfile is located in its respective directory (`mysql/` and `java/`). A `docker-compose.yml` file in the root directory is used to orchestrate and run both containers together.
+
+Additionally, a `network/` directory is included, containing a shell script that creates a custom Docker network. This network allows the containers to communicate with each other using their container names.
+
 ***
 ### Docker Compose
 At the root file run the following command 
@@ -123,3 +132,4 @@ You can run the below command in order to deploy the artifact in your local tomc
 ```
 mvn clean tomcat7:deploy
 ```
+
