@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.com/mixaverros88/dockerized-java-mysql-app.svg?branch=master)](https://travis-ci.com/mixaverros88/dockerized-java-mysql-app)
-
-# Dockerize java mysql example project
+# Dockerize Java And Mysql Example Project
 
 ![preview image](https://raw.githubusercontent.com/mixaverros88/docker-with-java-and-mysql/master/icons/docker_overview.JPG)
 
@@ -132,4 +130,5 @@ You can run the below command in order to deploy the artifact in your local tomc
 ```
 mvn clean tomcat7:deploy
 ```
+
 
